@@ -1,6 +1,6 @@
 var move=function(timer){
 	var idx=0;
-	$('#adv1 li').eq(0).clone().appendTo('#adv1');//复制第一张图添加到后面
+	$('#adv1 li').eq(0).clone().appendTo('#adv1');//复制第一张图添加到后面！
 	var lis=$('#adv1 li');//lis.length==6;  console.log(lis);
 	const WIDTH=parseInt($('#adv').css('width'));//获得轮播容器的宽度
 	$('#adv1').css('width',lis.length*WIDTH);//设置adv1的宽度为lis.length*WIDTH
@@ -22,7 +22,7 @@ var move=function(timer){
 			$('#adv1').animate({
 				left:-WIDTH*(lis.length-1)//显示clone出来的最后一张;
 			},400,function(){/*注意这里必须用回调函数，链式操作完全无效，我试过~~*/
-				$('#adv1').css('left',0);//将left改为0，试过多次都找不到切换痕迹~
+				$('#adv1').css('left',0);//电石火花间把left改为0，试过多次都找不到切换痕迹,你们帮忙看看~
 			});
 		}
 		$(".coordNum").eq(idx).addClass("hover").siblings().removeClass("hover");//给指定按钮添加样式
