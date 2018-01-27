@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#adv{
+	position:relative;
+	cursor:pointer;
+	width:670px;
+	height:240px;
+	border:1px solid #999999;
+	margin:0 auto;
+	overflow:hidden;
+}
+#adv:hover #prev,#adv:hover #next{
+	display:block;
+}
+#coord{
+	position:absolute;
+	bottom:10px;
+	right:100px;
+}
+.coordNum{
+	float:left;
+	width:5px;
+	height:5px;
+	padding:5px;
+	margin-left:5px;
+	border-radius:50%;
+	background-color:#ccc;
+	color:#fff;
+	cursor:pointer;
+}
+#coord .hover{
+	background-color:#C90000;
+	color:#000;
+}
+#adv1{
+	position:absolute;
+	left:0;
+}
+#adv1 .adv_li{
+	float:left;
+}
+#prev{
+	position:absolute;
+	left:10px;
+	top:40%;
+	z-index:10;
+	opacity:0.3;
+	display:none;
+}
+#next{
+	position:absolute;
+	right:10px;
+	top:40%;
+	z-index:10;
+	opacity:0.3;
+	display:none;
+}
+#next:hover,#prev:hover{
+	opacity:.7;
+}
