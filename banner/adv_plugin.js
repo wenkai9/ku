@@ -58,7 +58,7 @@ var move=function(timer){
 		t=setInterval(moveLeft,timer);
 	})
 	/* 手动查看图片功能 */
-	$('.coordNum').mouseover(function(){//这里还不清楚的看前面的轮播案例
+	$('.coordNum').mouseover(function(){
 		idx=$('.coordNum').index(this);
 		$('#adv1').animate({left:-WIDTH*idx},600);
 		$(this).addClass("hover").siblings().removeClass("hover");
