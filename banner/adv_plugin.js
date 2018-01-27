@@ -1,6 +1,6 @@
 var move=function(timer){
 	var idx=0;
-	$('#adv1 li').eq(0).clone().appendTo('#adv1');//复制第一张图添加到后面、、
+	$('#adv1 li').eq(0).clone().appendTo('#adv1');//复制第一张图添加到后面
 	var lis=$('#adv1 li');//lis.length==6;  console.log(lis);
 	const WIDTH=parseInt($('#adv').css('width'));//获得轮播容器的宽度
 	$('#adv1').css('width',lis.length*WIDTH);//设置adv1的宽度为lis.length*WIDTH
